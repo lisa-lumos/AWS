@@ -21,9 +21,13 @@ keywords: `Instance stores`, `Amazon Elastic Block Store (Amazon EBS)`, `Amazon 
 keywords: `Shared responsibility model`, `AWS Identity and Access Management (IAM)`, `AWS account root user`, `IAM users`, `IAM policies`, `IAM groups`, `IAM roles`, `AWS Organizations`, `Organizational units`, `AWS Artifact`, `Denial-of-service attacks`, `AWS Shield`, `AWS Key Management Service (AWS KMS)`, `AWS WAF`, `Amazon Inspector`, `Amazon GuardDuty`
 
 ### 7. Monitoring and Analytics
+keywords: `Amazon CloudWatch`, `CloudWatch alarms`, `CloudWatch dashboard`, `AWS CloudTrail`, `CloudTrail Insights`, `AWS Trusted Advisor`, `AWS Trusted Advisor dashboard`
+
+### 8. Pricing and Support
+keywords: `AWS Free Tier`, `AWS pricing concepts`, `AWS Pricing Calculator`, `Billing dashboard`, `Consolidated billing`, `AWS Budgets`, `AWS Cost Explorer`, `AWS Support plans`, `Basic Support`, `Developer`, `Business`, and `Enterprise Support`, `Technical Account Manager (TAM)`, `AWS Marketplace`
+
+### 9. Migration and Innovation
 keywords: 
-
-
 
 
 
