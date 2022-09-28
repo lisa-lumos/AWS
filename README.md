@@ -27,7 +27,10 @@ keywords: `Amazon CloudWatch`, `CloudWatch alarms`, `CloudWatch dashboard`, `AWS
 keywords: `AWS Free Tier`, `AWS pricing concepts`, `AWS Pricing Calculator`, `Billing dashboard`, `Consolidated billing`, `AWS Budgets`, `AWS Cost Explorer`, `AWS Support plans`, `Basic Support`, `Developer`, `Business`, and `Enterprise Support`, `Technical Account Manager (TAM)`, `AWS Marketplace`
 
 ### 9. Migration and Innovation
-keywords: 
+keywords: `AWS Cloud Adoption Framework (AWS CAF)`, `6 strategies for migration`, `AWS Snow Family`, `AWS Snowcone`, `AWS Snowball`, `AWS Snowmobile`, `Serverless applications`, `AWS Lambda`, `Artificial intelligence`, `Amazon Transcribe`, `Amazon Comprehend`, `Amazon Fraud Detector`, `Amazon Lex`, `Amazon SageMaker`
+
+### 10. The Cloud Journey
+keywords: `The AWS Well-Architected Framework`, `Benefits of the AWS Cloud`
 
 
 
