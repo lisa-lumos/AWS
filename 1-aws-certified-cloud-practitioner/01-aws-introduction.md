@@ -1,12 +1,12 @@
 # 1. AWS Introduction
 
-## client-server model
+## <div style="color:#c97316">The client-server model</div>
 In computing, a `client` can be a web browser or desktop application that a person interacts with to make requests to computer `servers`. A server can be services such as Amazon Elastic Compute Cloud (Amazon EC2), a type of virtual server.
 
-For example, suppose that a client makes a request for a news article, the score in an online game, or a funny video. The server evaluates the details of this request and fulfills it by returning the information to the client.
+A client makes a request, the server evaluates the details of this request and fulfills it by returning the information to the client.
 
-## Deployment models for cloud computing
-When selecting a cloud strategy, a company must consider factors such as required cloud application components, preferred resource management tools, and any legacy IT infrastructure requirements.
+## <div style="color:#c97316">Deployment models for cloud computing</div>
+When selecting a `cloud strategy`, a company must consider factors such as `required cloud application components`, `preferred resource management tools`, and `any legacy IT infrastructure requirements`.
 
 The three cloud computing deployment models are `cloud-based`, `on-premises`, and `hybrid`. 
 
@@ -15,13 +15,13 @@ The three cloud computing deployment models are `cloud-based`, `on-premises`, an
 - Migrate existing applications to the cloud.
 - Design and build new applications in the cloud.
 
-You can build those applications on low-level infrastructure that requires your IT staff to manage them. Alternatively, you can build them using higher-level services that reduce the management, architecting, and scaling requirements of the core infrastructure.
+You can build those applications on `low-level infrastructure` that requires your IT staff to manage them. Alternatively, you can build them using `higher-level services that reduce` the `management`, `architecting`, and `scaling requirements` of the core infrastructure.
 
 For example, a company might create an application consisting of virtual servers, databases, and networking components that are fully based in the cloud.
 
 ### On-Premises Deployment
-- Deploy resources by using `virtualization and resource management` tools.
-- Increase resource utilization by using `application management` and `virtualization technologies`.
+- Deploy resources by using `virtualization` and `resource management` tools.
+- Increase resource utilization by using `virtualization` technologies and `application management` technologies.
 
 On-premises deployment is also known as a `private cloud deployment`.
 
@@ -31,14 +31,14 @@ For example, you might have applications that run on technology that is fully ke
 - `Connect` cloud-based resources to on-premises infrastructure.
 - `Integrate` cloud-based resources with legacy IT applications.
 
-In a hybrid deployment, cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.
+In a hybrid deployment, cloud-based resources are connected to on-premises infrastructure. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.
 
-For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud.
+For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to `keep the legacy applications on premises` while `benefiting from the data and analytics services that run in the cloud`.
 
-## Benefits of cloud computing
+## <div style="color:#c97316">Benefits of cloud computing</div>
 ### Trade upfront expense for variable expense
 
-`Upfront expense` refers to data centers, physical servers, and other resources that you would need to invest in before using them. Variable expense means `you only pay for computing resources you consume` instead of investing heavily in data centers and servers before you know how you’re going to use them. By taking a cloud computing approach that offers the benefit of `variable expense`, companies can implement innovative solutions while saving on costs.
+`Upfront expense` refers to data centers, physical servers, and other resources that you would need to `invest` in before using them. Variable expense means `you only pay for computing resources you consume` instead of investing heavily in data centers and servers before you know how you’re going to use them. By taking a cloud computing approach that offers the benefit of `variable expense`, companies can implement innovative solutions while saving on costs.
 
 ### Stop spending money to run and maintain data centers
 Computing in data centers often requires you to spend more `money and time managing infrastructure and servers`. A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.
