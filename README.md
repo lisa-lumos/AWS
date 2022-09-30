@@ -1,6 +1,6 @@
 # AWS Projects and Notes
 
-## <div style="color:#c97316">AWS Certified Cloud Practitioner (AWS Cloud Practitioner Essentials)</div>
+## 🏷 AWS Certified Cloud Practitioner (AWS Cloud Practitioner Essentials)
 
 ### 1. AWS Introduction
 keywords: `client-server model`, `Cloud-based Deployment`, `On-Premises Deployment`, `Hybrid Deployment`, `Benefits of cloud computing`

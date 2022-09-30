@@ -1,11 +1,11 @@
 # 1. AWS Introduction
 
-## <div style="color:#c97316">The client-server model</div>
+## 🏷 The client-server model
 In computing, a `client` can be a web browser or desktop application that a person interacts with to make requests to computer `servers`. A server can be services such as Amazon Elastic Compute Cloud (Amazon EC2), a type of virtual server.
 
 A client makes a request, the server evaluates the details of this request and fulfills it by returning the information to the client.
 
-## <div style="color:#c97316">Deployment models for cloud computing</div>
+## 🏷 Deployment models for cloud computing
 When selecting a `cloud strategy`, a company must consider factors such as `required cloud application components`, `preferred resource management tools`, and `any legacy IT infrastructure requirements`.
 
 The three cloud computing deployment models are `cloud-based`, `on-premises`, and `hybrid`. 
@@ -35,7 +35,7 @@ In a hybrid deployment, cloud-based resources are connected to on-premises infra
 
 For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to `keep the legacy applications on premises` while `benefiting from the data and analytics services that run in the cloud`.
 
-## <div style="color:#c97316">Benefits of cloud computing</div>
+## 🏷 Benefits of cloud computing
 ### Trade upfront expense for variable expense
 
 `Upfront expense` refers to data centers, physical servers, and other resources that you would need to `invest` in before using them. Variable expense means `you only pay for computing resources you consume` instead of investing heavily in data centers and servers before you know how you’re going to use them. By taking a cloud computing approach that offers the benefit of `variable expense`, companies can implement innovative solutions while saving on costs.
