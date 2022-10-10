@@ -1,25 +1,27 @@
 # 5. Storage and Databases
 
-## Instance stores and Amazon Elastic Block Store (Amazon EBS)
+## 🏷 Instance stores and Amazon Elastic Block Store (Amazon EBS)
 ### Instance stores
-`Block-level storage` volumes behave like `physical hard drives`. An `instance store` provides `temporary block-level storage` for an `Amazon EC2 instance`. An instance store is disk storage that is `physically attached` to the host computer for an `EC2 instance`, and therefore `has the same lifespan as the instance`. When the instance is terminated, you `lose any data in the instance store`.
+An `instance store` provides `temporary block-level storage` for an `Amazon EC2 instance`. An instance store is disk storage that is `physically attached` to the host computer for an `EC2 instance`, and therefore `has the same lifespan as the instance`. When the instance is terminated, you `lose any data in the instance store`.
 
 ### Amazon Elastic Block Store (Amazon EBS)
-`Amazon Elastic Block Store (Amazon EBS)` is a service that provides `block-level storage` volumes that you can use with `Amazon EC2 instances`. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume `remains available`. To create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an EBS volume, it `can attach to an Amazon EC2 instance`. Because EBS volumes are `for data that needs to persist`, it’s important to `back up` the data. You can take `incremental backups` of EBS volumes by creating `Amazon EBS snapshots`.
+`Block-level storage` volumes behave like `physical hard drives`. `Amazon Elastic Block Store (Amazon EBS)` is a service that provides `block-level storage` volumes that you can use with `Amazon EC2 instances`. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume `remains available`. To create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an EBS volume, it `can attach to an Amazon EC2 instance`. Because EBS volumes are `for data that needs to persist`, it’s important to `back up` the data. You can take `incremental backups` of EBS volumes by creating `Amazon EBS snapshots`.
+
+When you modify a file in `block storage`, only the pieces that are `changed` are updated. 
 
 ### Amazon EBS snapshots
 An `EBS snapshot` is an `incremental backup`. This means that the first backup taken of a volume copies all the data. For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved. `Incremental backups` are different from `full backups`, in which all the data in a storage volume copies each time a backup occurs. The full backup includes data that has not changed since the most recent backup.
 
-## Amazon Simple Storage Service (Amazon S3)
+## 🏷 Amazon Simple Storage Service (Amazon S3)
 ### Object storage
 In `object storage`, each object consists of `data`, `metadata`, and `a key`. The data might be an image, video, text document, or any other type of file. Metadata contains information about what the data is, how it is used, the object size, and so on. An object’s `key` is its `unique identifier`.
 
-When you modify a file in `block storage`, only the pieces that are `changed` are updated. When a file in `object storage` is `modified`, `the entire object is updated`.
+When a file in `object storage` is `modified`, `the entire object is updated`.
 
 ### Amazon Simple Storage Service (Amazon S3)
 `Amazon Simple Storage Service (Amazon S3)` is a service that provides `object-level storage`. Amazon S3 stores data as objects in `buckets`. You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. For example, you might use Amazon S3 to store backup files, media files for a website, or archived documents. Amazon S3 offers unlimited storage space. The `maximum file size` for an `object` in` Amazon S3` is `5 TB`.
 
-When you upload a file to Amazon S3, you can set `permissions` to control `visibility and access` to it. You can also use the Amazon S3 `versioning` feature to `track changes to your objects` over time
+When you upload a file to Amazon S3, you can set `permissions` to control `visibility and access` to it. You can also use the Amazon S3 `versioning` feature to `track changes to your objects` over time. 
 
 ### Amazon S3 storage classes
 With Amazon S3, you pay only for what you use. You can choose from a range of storage classes to select a fit for your business and cost needs. When selecting an Amazon S3 storage class, consider these two factors:
@@ -64,9 +66,9 @@ For example, you might use this storage class to store archived customer records
 
 When deciding between Amazon S3 Glacier and Amazon S3 Glacier Deep Archive, consider `how quickly` you need to `retrieve` archived objects. 
 
-## Amazon Elastic File System (Amazon EFS)
+## 🏷 Amazon Elastic File System (Amazon EFS)
 ### File storage
-In `file storage`, `multiple clients` (such as users, applications, servers, and so on) can access data that is stored in `shared` file folders. In this approach, a storage server uses block storage with a local file system to organize files. Clients access data through file paths.
+In `file storage`, `multiple clients` (such as users, applications, servers, and so on) can access data that is stored in `shared` file folders. In this approach, a storage server uses `block storage` with a local file system to organize files. Clients access data through file paths.
 
 Compared to block storage and object storage, file storage is ideal for use cases in which `a large number of services and resources` need to `access the same data` `at the same time`.
 
@@ -77,7 +79,7 @@ An `Amazon EBS` volume stores data in a `single Availability Zone`. To attach an
 
 `Amazon EFS` is a `regional` service. It stores data in and across `multiple Availability Zones`.  The duplicate storage enables you to access data `concurrently` from `all the Availability Zones` in the Region where a file system is located. Additionally, `on-premises` servers can access `Amazon EFS` using `AWS Direct Connect`.
 
-## Amazon Relational Database Service (Amazon RDS)
+## 🏷 Amazon Relational Database Service (Amazon RDS)
 ### Relational databases
 Relational databases use structured query language (SQL) to store and query data. This approach allows data to be stored in an easily understandable, consistent, and scalable way. 
 ### Amazon Relational Database Service
@@ -99,7 +101,7 @@ Amazon RDS provides a number of different security options. Many Amazon RDS data
 ### Amazon Aurora
 `Amazon Aurora` is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases. Amazon Aurora helps to `reduce your database costs` by `reducing unnecessary input/output (I/O)` operations, while ensuring that your database resources remain reliable and available. Consider Amazon Aurora if your workloads require `high availability`. It replicates `six copies of your data across three Availability Zones` and continuously `backs up` your data to Amazon S3.
 
-## Amazon DynamoDB
+## 🏷 Amazon DynamoDB
 ### Nonrelational databases
 In a nonrelational database, you create tables. A table is a place where you can store and query data. Nonrelational databases are sometimes referred to as `“NoSQL databases”` because they use structures other than rows and columns to organize data. One type of structural approach for nonrelational databases is `key-value pairs`. With key-value pairs, data is organized into items (keys), and items have attributes (values). 
 
@@ -111,10 +113,10 @@ In a key-value database, you can add or remove attributes from items in the tabl
 - DynamoDB is `serverless`, which means that you do not have to provision, patch, or manage servers. You also do not have to install, maintain, or operate software.
 - As the size of your database shrinks or grows, DynamoDB `automatically scales` to adjust for changes in capacity while maintaining consistent performance. This makes it a suitable choice for use cases that require high performance while scaling.
 
-## Amazon Redshift
+## 🏷 Amazon Redshift
 `Amazon Redshift` is a `data warehousing service` that you can use for `big data analytics`. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
 
-## AWS Database Migration Service
+## 🏷 AWS Database Migration Service
 ### AWS Database Migration Service (AWS DMS)
 `AWS Database Migration Service (AWS DMS)` enables you to migrate relational databases, nonrelational databases, and other types of data stores. With AWS DMS, you move data between a `source database` and a `target database`. The source and target databases can be of the `same type` or `different types`. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. 
 
@@ -123,7 +125,7 @@ In a key-value database, you can add or remove attributes from items in the tabl
 - `Database consolidation`: Combining several databases into a single database
 - `Continuous replication`: Sending ongoing copies of your data to other target sources instead of doing a one-time migration
 
-## Additional database services
+## 🏷 Additional database services
 ### Amazon DocumentDB
 `Amazon DocumentDB` is a `document database service` that supports `MongoDB` workloads. 
 
@@ -134,7 +136,7 @@ In a key-value database, you can add or remove attributes from items in the tabl
 `Amazon Quantum Ledger Database (Amazon QLDB)` is a ledger database service. You can use Amazon QLDB to `review a complete history of all the changes that have been made` to your application data.
 
 ### Amazon Managed Blockchain
-`Amazon Managed Blockchai`n is a service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a `distributed ledger system` that lets multiple parties run transactions and share data `without a central authority`.
+`Amazon Managed Blockchain` is a service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a `distributed ledger system` that lets multiple parties run transactions and share data `without a central authority`.
 
 ### Amazon ElastiCache
 `Amazon ElastiCache` is a service that `adds caching layers on top of your databases` to help improve the `read times` of common requests. It supports two types of data stores: `Redis` and `Memcached`.
