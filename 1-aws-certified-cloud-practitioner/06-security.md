@@ -1,5 +1,5 @@
 # 6. Security
-## Shared responsibility model
+## 🏷 Shared responsibility model
 ### The AWS shared responsibility model
 AWS is responsible for some parts of your environment and you (the customer) are responsible for other parts. This concept is known as the `shared responsibility model`. The shared responsibility model divides into `customer responsibilities` (commonly referred to as `“security in the cloud”`) and `AWS responsibilities` (commonly referred to as `“security of the cloud”`).
 
@@ -19,7 +19,7 @@ AWS manages the security of the cloud, specifically the physical infrastructure 
 
 Although you cannot visit AWS data centers to see this protection firsthand, AWS provides several reports from third-party auditors. These auditors have verified its compliance with a variety of computer security standards and regulations.
 
-## User permissions and access
+## 🏷 User permissions and access
 ### AWS Identity and Access Management (IAM)
 AWS `Identity and Access Management (IAM)` enables you to manage access to AWS services and resources securely. IAM gives you the flexibility to configure access based on your company’s specific operational and security needs. You do this by using a combination of IAM features, including:
 - IAM users, groups, and roles
@@ -52,7 +52,7 @@ An `IAM role` is an identity that you can assume to gain `temporary access to pe
 ### Multi-factor authentication
 In IAM, multi-factor authentication (MFA) provides an extra layer of security for your AWS account.
 
-## AWS Organizations
+## 🏷 AWS Organizations
 Suppose that your company has `multiple AWS accounts`. You can use `AWS Organizations` to consolidate and `manage multiple AWS accounts within a central location`. When you create an organization, AWS Organizations automatically creates a root, which is the parent container for all the accounts in your organization. In AWS Organizations, you can `centrally control permissions for the accounts` in your organization by using `service control policies (SCPs)`. SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that `users` and `roles` in each account can access. `Consolidated billing` is another feature of AWS Organizations. 
 
 In AWS Organizations, you can apply `service control policies (SCPs)` to the `organization root`, an `individual member account`, or an `OU`. An SCP affects all IAM users, groups, and roles within an account, including the AWS account root user.
@@ -62,7 +62,7 @@ In `AWS Organizations`, you can group `accounts` into `organizational units (OUs
 
 By organizing separate accounts into OUs, you can more `easily isolate workloads or applications that have specific security requirements`. For instance, if your company has accounts that can access only the AWS services that meet certain regulatory requirements, you can put these accounts into one OU. Then, you can attach a policy to the OU that blocks access to all other AWS services that do not meet the regulatory requirements.
 
-## Compliance
+## 🏷 Compliance
 ### AWS Artifact
 Depending on your company’s industry, you may need to `uphold specific standards`. An `audit` or `inspection` will ensure that the company has met those standards. `AWS Artifact` is a service that provides on-demand access to `AWS security and compliance reports` and `select online agreements`. AWS Artifact consists of two main sections: `AWS Artifact Agreements` and `AWS Artifact Reports`.
 
@@ -80,7 +80,7 @@ You can also access compliance whitepapers and documentation on topics such as:
 
 Additionally, the Customer Compliance Center includes an auditor learning path. This learning path is designed for individuals in auditing, compliance, and legal roles who want to learn more about how their internal operations can demonstrate compliance using the AWS Cloud.
 
-## Denial-of-service attacks
+## 🏷 Denial-of-service attacks
 A `denial-of-service (DoS) attack` is a deliberate attempt to make a website or application unavailable to users. For example, an attacker might flood a website or application with `excessive network traffic` until the targeted website or application becomes `overloaded` and is no longer able to respond. If the website or application becomes unavailable, this denies service to users who are trying to make legitimate requests.
 
 ### Distributed denial-of-service attacks
@@ -95,7 +95,7 @@ In a `distributed denial-of-service (DDoS) attack`, `multiple sources` are used 
 **AWS Shield Advanced**
 `AWS Shield Advanced` is a `paid` service that provides `detailed attack diagnostics` and the ability to detect and mitigate `sophisticated DDoS attacks`. It also `integrates` with other services such as Amazon CloudFront, Amazon Route 53, and Elastic Load Balancing. You can integrate `AWS Shield` with `AWS WAF` by writing custom rules to mitigate complex DDoS attacks.
 
-## Additional security services
+## 🏷 Additional security services
 ### AWS Key Management Service (AWS KMS)
 `AWS Key Management Service (AWS KMS)` enables you to perform `encryption` operations through the use of `cryptographic keys`. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to `create, manage, and use` cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
 
