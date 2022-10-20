@@ -1,5 +1,5 @@
 # 9. Migration and Innovation
-## AWS Cloud Adoption Framework (AWS CAF)
+## 🏷 AWS Cloud Adoption Framework (AWS CAF)
 ### Six core perspectives of the Cloud Adoption Framework
 At the highest level, the `AWS Cloud Adoption Framework (AWS CAF)` organizes guidance into `six areas of focus`, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead.
 
@@ -49,7 +49,7 @@ The Operations Perspective helps you to enable, run, use, operate, and recover I
 - IT operations managers
 - IT support managers
 
-## Migration strategies
+## 🏷 Migration strategies
 ### 6 strategies for migration
 When migrating applications to the cloud, six of the most common migration strategies that you can implement are:
 - Rehosting
@@ -85,7 +85,7 @@ Retaining consists of keeping applications that are `critical` for the business 
 
 Retiring is the process of `removing applications` that are `no longer needed`.
 
-## AWS Snow Family
+## 🏷 AWS Snow Family
 ### AWS Snow Family members
 The `AWS Snow Family` is a collection of `physical devices` that help to `physically transport up to exabytes of data into and out of AWS`. 
 
@@ -108,7 +108,7 @@ AWS Snowball offers two types of devices:
 
 AWS Snowmobile is an `exabyte-scale data transfer service` used to move large amounts of data to AWS. You can transfer up to `100 petabytes of data per Snowmobile`, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.
 
-## Innovation with AWS
+## 🏷 Innovation with AWS
 When examining how to use AWS services, it is important to focus on the desired outcomes. You are properly equipped to drive innovation in the cloud if you can clearly articulate the following conditions: 
 - The current state
 - The desired state
