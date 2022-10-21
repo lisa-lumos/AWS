@@ -1,6 +1,6 @@
 # 10. The Cloud Journey
 
-## The AWS Well-Architected Framework
+## 🏷 The AWS Well-Architected Framework
 The `AWS Well-Architected Framework` helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against `best practices` and `design principles` and identify areas for improvement. The Well-Architected Framework is based on five pillars: 
 - Operational excellence
 - Security
@@ -31,7 +31,7 @@ Performance efficiency is the ability to use computing resources efficiently to 
 ### Cost optimization
 Cost optimization is the ability to run systems to deliver business value at the lowest price point. Cost optimization includes `adopting a consumption model`, `analyzing and attributing expenditure`, and `using managed services` to reduce the cost of ownership.
 
-## Benefits of the AWS Cloud
+## 🏷 Benefits of the AWS Cloud
 Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments: 
 - Trade upfront expense for variable expense.
 - Benefit from massive economies of scale.
