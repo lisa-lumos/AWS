@@ -22,7 +22,13 @@ Q3: Your web service has a performance SLA to respond to 90% of requests in <5 s
 
 Q4: You wish to deploy a microservices-based application without the operational overhead of managing infrastructure. This solution needs to accommodate rapid changes in the volume of requests. What do you do?
 - Answer: Run the microservices in AWS Lambda behind an API Gateway
-- Note: 
+- Note: ... (needs further research)
+
+Q5: Using Amazon Elastic Container Service (ECS) to run a containerized we application, you wish to minimize costs by running multiple copies of a task on each container instance. What do you do?
+- Answer: Configure an Application Load Balancer to distribute the requests using path-based routing. 
+- Note: ... (needs further research)
+
+
 
 ## Design highly available and/or fault-tolerant architectures
 - Determine the amount of resources needed to provide a fault-tolerant architecture across Availability Zones
