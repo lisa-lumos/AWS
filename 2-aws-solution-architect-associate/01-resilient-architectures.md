@@ -26,7 +26,7 @@ Q4: You wish to deploy a microservices-based application without the operational
 
 Q5: Using Amazon Elastic Container Service (ECS) to run a containerized we application, you wish to minimize costs by running multiple copies of a task on each container instance. What do you do?
 - Answer: Configure an Application Load Balancer to distribute the requests using path-based routing. 
-- Note: ... (needs further research)
+- Note: ... (needs further research). Application Load Balancer, Network Load Balancer, Gateway Load Balancer, Classic Load Balancer. Route 53 - routing policy: simple RR, weighted, geo-location.  
 
 
 
