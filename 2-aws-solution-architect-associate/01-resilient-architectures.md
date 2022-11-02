@@ -11,11 +11,11 @@ Q2: Which set of database engines does Amazon Relational Database Service (Amazo
 
 Q3: Your web service has a performance SLA to respond to 90% of requests in <5 seconds. Under normal and heavy operations, disbributing requests over four instances meets performance requirements. What architecture ensures cost efficient high availability of your service if an Availability Zone becomes unreachable? 
 - Answer: Deploy the service on four servers with auto scaling across two availability zones. 
-- Note: if one zone becomes unavaila ble, because it is an auto scaling group, it will quickly add two more servers, which will then meet the requirements on performance. 
+- Note: if one zone becomes unavailable, because it is an auto scaling group, it will quickly add two more servers, which will then meet the requirements on performance. 
 
 Q4: You wish to deploy a microservices-based application without the operational overhead of managing infrastructure. This solution needs to accommodate rapid changes in the volume of requests. What do you do?
 - Answer: Run the microservices in AWS Lambda behind an API Gateway
-- Note: ... (needs further research)
+- Note: Do not want to manage infrastructure, so not EC2. Containers also relies on EC2. While Lambda is a fully managed, serverless service. What beanstalk does is that it spins up a cloud formation template which automatically spins up EC2 instances - so there's still server involved, and has maintenance overhead compared with Lambda or API Gateway. 
 
 Q5: Using Amazon Elastic Container Service (ECS) to run a containerized we application, you wish to minimize costs by running multiple copies of a task on each container instance. What do you do?
 - Answer: Configure an Application Load Balancer to distribute the requests using path-based routing. 
@@ -25,9 +25,13 @@ Q6: An application consists of Amazon EC2 instances placed in different Availabi
 - Answer: NAT instance. 
 - Note: has multiple EC2 instances which is good, elastic load balancing and auto scaling group are both managed by AWS, so probably good. NAT instance is in a singular form, may have problem.  
 
+Q7: A company must store around 500GB of files, and expects the data size to increase to 80TB over the next couple of months. The company needs access to this data at all times. Which would be an ideal storage option for these requirements? 
+- Answer: S3.
+- Note: looking for file storage, so cannot choose databases. They always need access to data, so cannot be S3 Glacier. This leaves us S3 only. 
 
-
-
+Q8: You are designing a leaderboard that expects to have millions of users. You want to ensure the lowest latency for this leaderboard. What datastore would be best suited? Amazon DynamoDB? Amazon RDS? AWS Glue? Amazon Redshift?
+- Answer: Amazon DynamoDB
+- Note: AWS Glue is for data catalog, crawler, ETL service. Redshift is for analytics, not transactions. Requires low latency, so should pick DynamoDB. RDS is slightly older technology and hasn't been designed for web-scale apps. 
 
 
 
