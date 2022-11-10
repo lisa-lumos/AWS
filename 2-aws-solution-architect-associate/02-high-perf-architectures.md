@@ -23,11 +23,14 @@ Q6: Which of the following are characteristics of Amazon EC2 Auto Scaling on AWS
 A: 2 and 5. 
 Notes: 3 is Cloudwatch. 4 is Simple Notification Service
 
+Q7: Which services work together to enable auto scaling of Amazon EC2 instances? (Choose three) 1. Amazon EC2 Auto Scaling? 2. CloudWatch Alarms? 3. CloudWatch Logs? 4. Amazon EC2 Elastic Load Balancer? 5. Amazon CloudTrial
+A:  1: yes. 2: yes, it monitors metric, and monitors metric for thresholds. 3. Log is more about what happened. 4: yes, it is needed for spreading the load. 5. no, similar to logs.  
 
+Q8: Which of the following services can be used to decouple an architecture? (Choose three) 1. Elastic Load Balancing? 2. Auto scaling? 3. SQS? 4. SNS? 
+A: auto scaling is just adding more of the same thing, not separating components. SQS and SNS sits in between of components and act as an intermediary.  
 
-
-
-
+Q9: You are asked to improve the performance of an image processing application that uses Amazon SQS and EC2 instances as consumers. High volumes of traffic causes message backlogs in SQS. What do you do? 1. Purchase dedicated instances? 2. Convert to SQS FIFO queues? 3. Create and AWS Lambda function to scale out num of consumer instances when backlog grows.? 4. Configure an Auto-scaling group based on the ApproximateNumberOfMessages Amazon CloudWatch metric
+A: dedicated instances will not improve performance. You should avoid FIFO because you want to spread things out. You could write a lambda function, but it is more work, you have to write custom code. Using Auto-scaling group would be easy to set up and would work. 
 
 
 
