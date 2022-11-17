@@ -27,7 +27,11 @@ Q6: You need an application (web accessible) and database tier (Amazon RDS).. Wh
  
 A: 2 . NAT: network access translation. Choice 5 need a load balancer to be accessible to the web. 
 
+Q7: Which additional layer of security can you deploy at the subnet level? 1. Security group? 2. AWS Identity and Access Management(IAM)? 3. AWS organization? 4. Network access control list (ACL)?
 
+A: 4
+
+Notes: Inside a VPI, imagine there is a router that routes to two subnets, inside subnets there are EC2 instances. The first barrier it will encounter is the network access control list. IAM is for identity and access management, it is not at the network level, it is about the access of the service itself. Security group is only for EC2 instances. 
 
 
 
