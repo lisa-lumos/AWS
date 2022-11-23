@@ -21,9 +21,25 @@ A: 1.
 
 Notes: problem statement needs scale capabilities. CloudFormation is an orchestration engine, infra as code, you need to tell it to run, takes minutes to create instances, delay is too large for this scenario (takes too long to spin up). Serverless Aurora could grow/contract based on needs. You can also configure the db to Pause compute capacity after a certain time period. 
 
+Q4: Your product group has determined a need to store 200TB of videos created over the last several years, with recent content being accessed by users the most often. The data must be accessed locally, but there is no space in the data center to install local storage devices to store this data. What AWS cloud service will meet these requirements? 
+1. AWS Storage Gateway Gateway-Cached volumes
+2. AWS Storage Gateway Gateway-Stored volumes
+3. AWS Import/Export Disk
+4. Amazon EC2 instances with attached Amazon EBS volumes
 
+A: 1. 
 
+Notes: AWS Import/Export Disk sends data to EBS, which is same with choice 4. AWS Storage Gateway provides on-prem access to virtually unlimited cloud storage. On the wire, the storage gateway is backed by S3. Needs to access recent data, so use cache. 
 
+Q5: You need to replicate proprietary, on-prem, reporting system data into AWS for long term analytics and archival. It is estimated that you require a high-performance connection that is dedicated to your use. What option is best for your scenario? 
+1. VPC Peering Connection
+2. AWS Database Migration Services (DMS)
+3. Virtual Private Network
+4. AWS Direct Connect
+
+A: 4
+
+Notes: VPC Peering is for connecting different VPCs. VPN is for encrypted connection. 100 GB/s connection for direct connect, but only 1.25 GB/s for VPN. VPN is charged by hours of connection and amount of data that transfers out per GB. AWS Direct Connect charges in the similar way, it is economical. 
 
 
 
