@@ -1,4 +1,4 @@
-# AWS Solution Architect Associate
+# AWS Solution Architect Associate (Power Hour videos notes)
 `https://aws.amazon.com/certification/certified-solutions-architect-associate/?ch=sec&sec=rmg&d=1`. 
 
 ## 1. Resilient Architectures
@@ -33,4 +33,4 @@ Identify key performance indicators to ensure the high availability of the solut
 
 ## 4. Cost-Optimized Architectures
 
-
+## 5. Review
