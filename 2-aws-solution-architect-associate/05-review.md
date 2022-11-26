@@ -19,7 +19,15 @@ Q2: A company is planning to use Amazon Simple Storage Service (Amazon S3) to ho
 
 A: 2
 
+Q3: Which services use edge locations by default?
+1. Amazon Cloud Front
+2. AWS WAF
+3. Amazon Route 53
+4. All of the above
 
+A: 4
+
+Notes: 
 
 
 
