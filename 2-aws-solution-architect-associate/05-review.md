@@ -27,7 +27,14 @@ Q3: Which services use edge locations by default?
 
 A: 4
 
-Notes: 
+Q4: Which actions would create the most secure network for a three-tiered application, while allowing the web tier to be accessed from the internet securely? (Select 2)
+1. Attach API Gateway. Create private web, app, and DB subnets. 
+2. Attach an IGW. Create a public web subnet plus private app and DB subnets. 
+3. Create a web security group (allow internet traffic), an app SG (allow API Gateway requests), and a database SG (allow app SG traffic on DB port)
+4. Create a web security group (allow HTTPS from internet), app SG (allow HTTP from the web SG), and database SG (allows DB port traffic from the app SG)
+
+A: 2, 4
+
 
 
 
