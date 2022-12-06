@@ -75,11 +75,27 @@ A: 2.
 
 Note: NAT Gateway is unnecessary. 
 
+Q14. You wish to deploy a microservices-based application without the operational overhead of managing infrastructure. This solution needs to accommodate rapid changes in the volume of requests. What do you do?
+1. Run the microservices in containers using AWS Elastic Beanstalk
+2. Run the microservices in AWS Lambda behind an API Gateway
+3. Run the microservices on Amazon EC2 instances in an Auto Scaling group
+4. Run the microservices in containers using Amazon Elastic Container Service (Amazon ECS)
 
+A: 2
 
+Notes: Lambda scales well, and fully managed. With containers, you need to manage infrastructure because it runs on EC2.
 
+Q15. Easy. Skip
 
+Q16: A company has a set of resources hosted in a virtual private cloud (VPC) on the AWS Cloud. The IT security department has now mandated that all IP traffic from all network interfaces in the VPC be monitored. Which option would help fulfill this requirement?
+1. AWS Trusted Advisor
+2. VPC flow logs
+3. Amazon CloudWatch metrics
+4. AWS CloudTrial
 
+A: 2
 
+Notes: CloudTrial writes down everything happens in the account (create db, etc)
 
+Q17. Easy. Skip
 

@@ -34,3 +34,5 @@ Identify key performance indicators to ensure the high availability of the solut
 ## 4. Cost-Optimized Architectures
 
 ## 5. Review
+
+## 6. Practice
