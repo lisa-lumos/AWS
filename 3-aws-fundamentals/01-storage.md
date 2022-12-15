@@ -30,12 +30,35 @@ We have 2 EC2 instances inside a VPC. If we we want more storage for each of the
 
 Hybrid storage example: have onsite storage in a corporate data center, and also want to have data stored in S3, for disaster recovery. The corporate data center may have Pbs of data, so could use a snowball device, load data and send to AWS. And AWS will upload that data to S3. Use the AWS Storage Gateway to sync on-prem data with S3, through the AWS Direct Connect service (high speed link). 
 
+## RDS
+MySQL, Aurora, PostgreSQL, MS SQL Server, Oracle. 
 
+## DynamoDB
+Serverless. High speed, low latency. 
 
+## Redshift
+data warehouse, big data storage
 
+## ElastiCache
+In-memory data store
 
+## Database Migration Service (DMS)
+migrate databases, can across db types. 
 
+## Neptune
+Graph db, fully managed. Store relationships. 
 
+## Examples
+RDS can combine with a ElastiCache node to improve efficient and reduce cost, for high traffic requesting same data from server. Data lives in ElastiCache for a certain period. Deletion and writing of data are synced from RDS from ElastiCache. 
+
+## Create a MySQL db with RDS
+First, create a security group, so it can be attached to mySQL instance to allow remote connection to it. In the console, search for vpc, go to Security Groups under Security section on the left pane. Create security group -> Security group name: rds-intro-lab, Description: Inbound access from internet for MySQL RDS, VPC: (default) -> Under Inbound rules pane, Add rule -> Type: MySQL/Aurora, Source: Anywhere-IPv4, Add rule -> Source: Anywhere-IPv6. We do not need to define an outbound rule because security groups are stateful, so any inbound requests that comes in are allowed to get out automatically. -> Create security group. 
+
+Next, create a mysql instance. In the console, search rds. Create database -> Standard create; MySQL; Templates: Free tier; DB instance identifier: intro-aws-db; Add Master username and Master password; DB instance class: dt.t2.micro; use default storage; uncheck Enable storage autoscaling; VPC: (default); Subnet group: (default); Public access: Yes; VPC security group: (add rds-intro-lab); Database authentication: Password authentication; Initial database name: test; uncheck Enable automated backups -> Create database. 
+
+After a few minutes, the database status shows it is Available. Click on this db. The Endpoint is what we use to connect to this instance remotely (for the Hostname field when creating a new connection). Install MySQL workbench on the local computer, create a new connection, and see the db.  
+
+To delete this db in the console, select it, then Actions -> Delete. To delete this security group (has to happen after db deletion is successful), navigate to it, Actions -> Delete security groups -> Delete. 
 
 
 
