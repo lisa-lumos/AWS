@@ -26,9 +26,9 @@ Allow you to send email, SMS and mobile push messages for targeted marketing cam
 Bulk email sending service. 
 
 ### Using SES to send an email
+Search ses in the console, and select Amazon Simple Email Service. Create identity -> Identity type: Email address, Email address: xxx@email.com -> Create identity. Click the verify link in your inbox. Go to the Verified identities page from the left pane. Click on the email address hyperlink. Send test email -> Email format: Formatted, From-address: xxx@email.com, Scenario: Custom, Custom recipient: xxx2@email.com, Subject: test -> Sent test email. 
 
-
-
+To send more emails, we need to set this up with server account so e.g., sent emails with web page. So the account need to have production access. Go to the Account dashboard page, Request production access. 
 
 
 
