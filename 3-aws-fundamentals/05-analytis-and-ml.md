@@ -34,6 +34,9 @@ AWS flagship ML product that allow you to build and train your own ML models and
 ## Rekognition
 Provides deep learning based analysis of video and images.
 
+### Using Rekognition
+Search for it in the console. Expand the Demos tab and see the demos. 
+
 ## Lex
 Allow you to build conversational chat bots. Can be use for first-line support for customers. 
 
