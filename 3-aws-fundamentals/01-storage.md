@@ -1,4 +1,9 @@
 # AWS Storage Services
+Not all AWS region supports all AWS services. There is also a secret region, which users do not know where it is, which is specifically for US government intelligence organizations, such as the CIA. 
+
+Each region is divided up into at lease 2 availability zones, that are physically isolated from each other. 
+
+Local zones are located close to large cities and their centers, and provides the lowest latency within that specific area. Local zones operate as an extension of an AWS region, and also have multiple availability zones for high availability. 
 
 ## Simple Storage Service (S3)
 - serverless service
@@ -59,13 +64,3 @@ Next, create a mysql instance. In the console, search rds. Create database -> St
 After a few minutes, the database status shows it is Available. Click on this db. The Endpoint is what we use to connect to this instance remotely (for the Hostname field when creating a new connection). Install MySQL workbench on the local computer, create a new connection, and see the db.  
 
 To delete this db in the console, select it, then Actions -> Delete. To delete this security group (has to happen after db deletion is successful), navigate to it, Actions -> Delete security groups -> Delete. 
-
-
-
-
-
-
-
-
-
-
