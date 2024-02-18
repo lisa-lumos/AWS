@@ -36,19 +36,23 @@ We have 2 EC2 instances inside a VPC. If we we want more storage for each of the
 Hybrid storage example: have onsite storage in a corporate data center, and also want to have data stored in S3, for disaster recovery. The corporate data center may have Pbs of data, so could use a snowball device, load data and send to AWS. And AWS will upload that data to S3. Use the "AWS Storage Gateway" to sync on-prem data with S3, through the "AWS Direct Connect Service" (high speed link). 
 
 ## RDS
+Fully-managed database service, easy to launch and scale. 
+
 MySQL, Aurora, PostgreSQL, MS SQL Server, Oracle. 
+
+Aurora can run MySQL or PostgreSQL db engines, so that you do not need to pay the licensing fee. 
 
 ## DynamoDB
 Serverless. High speed, low latency. 
 
 ## Redshift
-data warehouse, big data storage
+data warehouse, big data storage. Based on PostgreSQL db engine. 
 
 ## ElastiCache
 In-memory data store
 
 ## Database Migration Service (DMS)
-migrate databases, can across db types. 
+migrate databases to AWS, can across db types. 
 
 ## Neptune
 Graph db, fully managed. Store relationships. 
